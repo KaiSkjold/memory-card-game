@@ -11,7 +11,7 @@ export default function Home() {
         <ScoringBanner />
       </div>
       <main>
-        <GameBoard />
+          <GameBoard />
       </main>
     </div>
   );

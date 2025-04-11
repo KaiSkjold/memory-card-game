@@ -76,10 +76,10 @@ const GameBoard = () => {
 
   return (
     <div>
-        <h3>PokeBoard score: {score} High score: {highScore}</h3>
+        <h3 className='flex justify-center items-center'>PokeBoard score: {score} High score: {highScore}</h3>
         <ul  className='flex flex-row flex-wrap gap-[24px] justify-center items-center'>
             {shufflePokemonList(pokemonList).map((pokemon, index) => (
-                <li key={index}>
+                <li key={index} className='flex justify-center items-center flex-col rounded-lg shadow-lg p-4 m-2 cursor-pointer hover:scale-105 transition-transform duration-300 ease-in-out'>
                     <picture className='flex justify-center items-center' onClick={() => handleClick(pokemon)}>
                         <img src={pokemon.sprite} alt={`picture of ${pokemon.name}`} className='h-50' />
                     </picture>
